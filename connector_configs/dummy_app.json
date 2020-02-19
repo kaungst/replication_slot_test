@@ -1,0 +1,15 @@
+{
+  "name": "dummy-app",
+  "config": {
+    "connector.class": "io.debezium.connector.postgresql.PostgresConnector",
+    "tasks.max": "1",
+    "plugin.name": "pgoutput",
+    "database.hostname": "dummy_app_db",
+    "database.port": "5432",
+    "database.user": "postgres",
+    "database.password": "",
+    "database.dbname": "dummy_app_dev",
+    "database.server.name": "dummy_app",
+    "snapshot.mode": "always"
+  }
+}
